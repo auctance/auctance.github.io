@@ -152,6 +152,198 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-c语言程序笔记、" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/17/c语言程序笔记、/">c语言程序笔记、</a>
+    </h1>
+  
+
+        
+        <a href="/2018/10/17/c语言程序笔记、/" class="archive-article-date">
+  	<time datetime="2018-10-17T13:43:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>/<em><br>×Ö·ûŽ®ÖÐ²éÕÒ×Ö·ûŽ®
+</em>/</p>
+<p>#include&lt;stdio.h&gt;</p>
+<p>char<em> my_strstr(char</em> a,char* b){</p>
+<pre><code>char* fa=a;
+char* ra=a;
+char* dest=b;
+
+while (*fa){
+    ra=fa;
+
+    while(*fa==*dest){
+        fa++;
+        dest++;
+    }
+
+    if(*dest==0){
+        return ra;
+    }
+
+    fa=ra;
+    dest=b;
+    fa++;
+}
+return NULL;
+</code></pre><p>}</p>
+<p>int main(){</p>
+<pre><code>char a[]=&quot;hello world&quot;;
+char b[]=&quot;llo&quot;;
+
+char* p=my_strstr(a,b);
+
+printf(&quot;%s\n&quot;,p);
+return 0;
+</code></pre><p>}</p>
+<p>/<em><br>×Ö·ûŽ®ÅÅÐò
+</em>/</p>
+<p>#include &lt;stdio.h&gt;</p>
+<p>int main(){<br>    int i,j,k;<br>    char* ch[] ={“hroig”,”gioahy”,”greahy”};//×Ö·ûŽ®Êý×é</p>
+<pre><code>for(i =0;i&lt;3-1;i++){
+    for (j=0;j&lt;3-i-1;j++){
+        if(ch[j][0]&gt;ch[j+1][0]){  //Ð¡ÐÄÔœœç
+            char* temp=ch[j];
+            ch[j]=ch[j+1];
+            ch[j+1]=temp;
+        }
+    }
+}
+
+for(k=0;k&lt;3;k++){
+    printf(&quot;%s\n&quot;,ch[k]);
+}
+
+return 0;
+</code></pre><p>}</p>
+<p>/<em><br>×Ö·ûŽ®³€¶È
+</em>/</p>
+<p>#include &lt;stdio.h&gt;</p>
+<p>int my_strlen00(char* ch){</p>
+<pre><code>int i =0;
+while(ch[i]){
+    i++;
+}
+return i;
+</code></pre><p>}</p>
+<p>int my_strlen(char<em> ch){<br>    char</em> temp=ch;<br>    while(*temp)temp++;<br>    return temp-ch;<br>}</p>
+<p>int main(){</p>
+<pre><code>char ch[]=&quot;hello world&quot;;
+int len =my_strlen(ch);
+printf(&quot;%d\n&quot;,len);
+return 0;
+</code></pre><p>}</p>
+<p>/<em><br>×Ö·ûŽ®³öÏÖŽÎÊý
+</em>/</p>
+<p>#include &lt;stdio.h&gt;</p>
+<p>int main(){</p>
+<pre><code>char* str=&quot;436abc3545abc6432abc54636abc523409abc&quot;;
+char ch[]=&quot;abc&quot;;
+char* p =my_strstr(str,ch);
+
+int count=0;
+while(p!=NULL){
+    count++;
+    p+=strlen(ch);
+    p=my_strstr(p,ch);
+}
+
+printf(&quot;%d\n&quot;,p);
+return 0;
+</code></pre><p>}</p>
+<p>/<em><br>Í³ŒÆ×Ö·û³öÏÖŽÎÊý
+</em>/</p>
+<p>#include &lt;stdio.h&gt;</p>
+<p>int getstrcount11(char* ch){<br>    int i =0;<br>    int count=0;<br>    while(ch[i]){<br>        if(ch[i]!=’ ‘){<br>            count++;<br>        }<br>        i++;<br>    }<br>    return count ;<br>}</p>
+<p>int getstrcount22(char<em> ch){<br>    int count=0;<br>    while(</em>ch){<br>        if(*ch!=’ ‘)count++;<br>        ch++;<br>    }<br>    return count;<br>}</p>
+<p>int main6435(){<br>    char ch[]=”hello world   “;<br>    int len =getstrcount(ch);<br>    printf(“%d\n”,len);<br>    return 0;<br>}</p>
+<p>int main(){<br>    int i;<br>    char ch[]=”zzzzzzzzzzheoolewgosaglhniahogjdoidjofusajlghlsagzzzgerpqtunbxzj”;<br>    int arr[26]={0};//³õÊŒ»¯ÀïÃæ¶ŒÎª0<br>    for(i =0;i&lt;strlen(ch);i++){  //±éÀúÊý×é<br>        arr[ch[i]-‘a’]++;  //Ã¿žöÎ»ÖÃ¶ÔÓŠ×ÖÄžµÄžöÊý<br>    }<br>    for(i=0;i&lt;26;i++){<br>        if(arr[i]!=0)<br>        printf(“×ÖÄž%c³öÏÖŽÎÊý£º%d\n “,i+’a’,arr[i]);<br>    }<br>    return 0;<br>}</p>
+<p>/<em><br>×Ö·ûŽ®ÄæÖÃÒÔŒ°»ØÎÄ×Ö·ûŽ®
+</em>/</p>
+<p>#include &lt;stdio.h&gt;</p>
+<p>void inverse00 (char* ch){    //Êý×éÐŽ·š<br>    int i =0;<br>    int j=strlen(ch)-1;</p>
+<pre><code>while (i&lt;j){
+    char temp=ch[i];
+    ch[i]=ch[j];
+    ch[j]=temp;
+    i++;
+    j--;
+}
+</code></pre><p>}</p>
+<p>void inverse2(char<em> ch){     //ÖžÕëÐŽ·š<br>    char</em> ftemp =ch;<br>    char<em> rtemp =ch+strlen(ch)-1;<br>    while(ftemp++&lt;rtemp–){<br>        char temp=</em>ftemp;<br>        <em>ftemp=</em>rtemp;<br>        *rtemp=temp;<br>    }<br>}</p>
+<p>int main453(){<br>    char ch[]=”hello world”;<br>    inverse(ch);<br>    printf(“%s\n”,ch);<br>    return 0;<br>}</p>
+<p>int symm(char<em> ch){<br>     char</em> f=ch;<br>     char<em> t=ch+strlen(ch)-1;<br>     while(f++&lt;t–){<br>         if(</em>f!=*t){ //ÓÃ²»µÈÓÚÅÐ¶Ï±ÈµÈÓÚÅÐ¶ÏºÃ Ö»ÒªÓÐÒ»ŽÎ²»·ûºÏŸÍ²»ÊÇ<br>             return -1;<br>         }<br>     }<br>     return 0;<br>}</p>
+<p>int main(){<br>    char ch[]=”abwea”;<br>    int value =symm(ch);</p>
+<pre><code>if(!value){
+    printf(&quot;ÊÇ»ØÎÄ×Ö·ûŽ®\n&quot;);
+}
+else{printf(&quot;²»ÊÇ»ØÎÄ×Ö·ûŽ®\n&quot;);}
+return 0;
+</code></pre><p>}</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C语言</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/10/17/c语言程序笔记、/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-记录更新网页版博客的几个命令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -423,11 +615,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">linux</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color4">C语言</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -436,6 +624,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">网页</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
             
             <div class="clearfix"></div>
