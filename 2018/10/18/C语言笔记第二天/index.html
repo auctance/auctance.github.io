@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: C语言 | Hexo</title>
+  <title>C语言笔记第二天 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/tags/C语言/index.html">
+  <meta name="description" content="#include &amp;lt;stdio.h&amp;gt; void BubbleSort (int a[], int n){    int i,j;    int change; for(i=n-1,change=1;i&amp;gt;=1&amp;amp;&amp;amp;change;i--){  //n-1ÊÇÊý×éµÄ×îºóÒ»žöÏÂ±ê     change =0;     for(j=0;j&amp;lt;i;j++)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C语言笔记第二天">
+<meta property="og:url" content="http://yoursite.com/2018/10/18/C语言笔记第二天/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#include &amp;lt;stdio.h&amp;gt; void BubbleSort (int a[], int n){    int i,j;    int change; for(i=n-1,change=1;i&amp;gt;=1&amp;amp;&amp;amp;change;i--){  //n-1ÊÇÊý×éµÄ×îºóÒ»žöÏÂ±ê     change =0;     for(j=0;j&amp;lt;i;j++)">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-10-18T15:13:00.949Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="C语言笔记第二天">
+<meta name="twitter:description" content="#include &amp;lt;stdio.h&amp;gt; void BubbleSort (int a[], int n){    int i,j;    int change; for(i=n-1,change=1;i&amp;gt;=1&amp;amp;&amp;amp;change;i--){  //n-1ÊÇÊý×éµÄ×îºóÒ»žöÏÂ±ê     change =0;     for(j=0;j&amp;lt;i;j++)">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,60 +154,173 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-C语言笔记第二天" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/10/17/c语言程序笔记、/" class="archive-article-date">
-  	<time datetime="2018-10-17T13:43:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-17</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/10/17/c语言程序笔记、/">c语言程序笔记、</a>
+    <h1 class="article-title" itemprop="name">
+      C语言笔记第二天
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C语言</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+        <a href="/2018/10/18/C语言笔记第二天/" class="archive-article-date">
+  	<time datetime="2018-10-18T15:11:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#include &lt;stdio.h&gt;</p>
+<p>void BubbleSort (int a[], int n){<br>    int i,j;<br>    int change;</p>
+<pre><code>for(i=n-1,change=1;i&gt;=1&amp;&amp;change;i--){  //n-1ÊÇÊý×éµÄ×îºóÒ»žöÏÂ±ê
+    change =0;
+    for(j=0;j&lt;i;j++){
+        if(a[j]&gt;a[j+1]){
+            int temp=a[j];
+            a[j]=a[j+1];
+            a[j+1]=temp;
+            change =1;//changeÔÚÄ³ÖÖ³Ì¶ÈÉÏ¿ÉÒÔŽúÌægotoÓïŸäµÄ×÷ÓÃ
+        }    
+    }
+}
+</code></pre><p>}</p>
+<p>int main(){<br>    int i;<br>    int a[]={1,5,76,3,765,97,90,56,4,8};<br>    BubbleSort(a,sizeof(a)/sizeof(a[0]));<br>    for(i=0;i&lt;sizeof(a)/sizeof(a[0]);i++){<br>        printf(“%d “,a[i]);<br>    }<br>    return 0;<br>}</p>
+<p>#include &lt;stdio.h&gt;</p>
+<p>char<em> my_strchr(char</em> ch,char c){<br>    while(<em>ch){<br>        if(</em>ch==c)return c;<br>        ch++;<br>    }<br>    return NULL;<br>}</p>
+<p>int main(){<br>    char ch[]=”hello world”;<br>    char c=’o’;<br>    char b =my_strchr(ch,c);<br>    printf(“%c\n”,b);<br>    return 0;<br>}</p>
 
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/10/18/C语言笔记第二天/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2018/10/17/c语言程序笔记、/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">c语言程序笔记、</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -226,9 +343,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,

@@ -152,6 +152,86 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-C语言笔记第二天" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/18/C语言笔记第二天/">C语言笔记第二天</a>
+    </h1>
+  
+
+        
+        <a href="/2018/10/18/C语言笔记第二天/" class="archive-article-date">
+  	<time datetime="2018-10-18T15:11:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#include &lt;stdio.h&gt;</p>
+<p>void BubbleSort (int a[], int n){<br>    int i,j;<br>    int change;</p>
+<pre><code>for(i=n-1,change=1;i&gt;=1&amp;&amp;change;i--){  //n-1ÊÇÊý×éµÄ×îºóÒ»žöÏÂ±ê
+    change =0;
+    for(j=0;j&lt;i;j++){
+        if(a[j]&gt;a[j+1]){
+            int temp=a[j];
+            a[j]=a[j+1];
+            a[j+1]=temp;
+            change =1;//changeÔÚÄ³ÖÖ³Ì¶ÈÉÏ¿ÉÒÔŽúÌægotoÓïŸäµÄ×÷ÓÃ
+        }    
+    }
+}
+</code></pre><p>}</p>
+<p>int main(){<br>    int i;<br>    int a[]={1,5,76,3,765,97,90,56,4,8};<br>    BubbleSort(a,sizeof(a)/sizeof(a[0]));<br>    for(i=0;i&lt;sizeof(a)/sizeof(a[0]);i++){<br>        printf(“%d “,a[i]);<br>    }<br>    return 0;<br>}</p>
+<p>#include &lt;stdio.h&gt;</p>
+<p>char<em> my_strchr(char</em> ch,char c){<br>    while(<em>ch){<br>        if(</em>ch==c)return c;<br>        ch++;<br>    }<br>    return NULL;<br>}</p>
+<p>int main(){<br>    char ch[]=”hello world”;<br>    char c=’o’;<br>    char b =my_strchr(ch,c);<br>    printf(“%c\n”,b);<br>    return 0;<br>}</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/10/18/C语言笔记第二天/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-c语言程序笔记、" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -619,19 +699,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">命令</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">网页</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">linux</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">命令</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">网页</a>
               </li>
             
             <div class="clearfix"></div>
