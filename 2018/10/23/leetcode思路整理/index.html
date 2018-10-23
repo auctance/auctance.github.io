@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>使用hexo搭建博客 | Hexo</title>
+  <title>leetcode思路整理 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一次使用hexo搭建自己的博客遇到的问题如下：  note.js版本下载错了，下载时候需要选择自己系统对应的版本 hexo init命令提示需要空的文件夹 解决办法：创建一个空的文件夹，cd到该文件夹，再使用hexo init命令 使用hexo s命令时未找到hexo命令 解决办法：同装hexo依赖时一样的办法 将hexo路径添加到全局变量 要想打开博客网站不要关闭terminal里面的运行 一">
-<meta name="keywords" content="linux,hexo">
+  <meta name="description" content="指针先把后指针地址传递给前指针，再把新前指针的地址之后的那个地址传给原来的后指针，如果中间有需要free的一定要记得free 例如： curren=cnext;cnext=current-&amp;gt;next;        current-&amp;gt;next=cnext-&amp;gt;next; free(cnext); cnext=current-&amp;gt;next; 想象一个链表，每个指针对应指向一个格">
+<meta name="keywords" content="leetcode">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用hexo搭建博客">
-<meta property="og:url" content="http://yoursite.com/2018/10/17/第一篇博客/index.html">
+<meta property="og:title" content="leetcode思路整理">
+<meta property="og:url" content="http://yoursite.com/2018/10/23/leetcode思路整理/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="第一次使用hexo搭建自己的博客遇到的问题如下：  note.js版本下载错了，下载时候需要选择自己系统对应的版本 hexo init命令提示需要空的文件夹 解决办法：创建一个空的文件夹，cd到该文件夹，再使用hexo init命令 使用hexo s命令时未找到hexo命令 解决办法：同装hexo依赖时一样的办法 将hexo路径添加到全局变量 要想打开博客网站不要关闭terminal里面的运行 一">
+<meta property="og:description" content="指针先把后指针地址传递给前指针，再把新前指针的地址之后的那个地址传给原来的后指针，如果中间有需要free的一定要记得free 例如： curren=cnext;cnext=current-&amp;gt;next;        current-&amp;gt;next=cnext-&amp;gt;next; free(cnext); cnext=current-&amp;gt;next; 想象一个链表，每个指针对应指向一个格">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-23T04:08:49.579Z">
+<meta property="og:updated_time" content="2018-10-23T14:36:57.977Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用hexo搭建博客">
-<meta name="twitter:description" content="第一次使用hexo搭建自己的博客遇到的问题如下：  note.js版本下载错了，下载时候需要选择自己系统对应的版本 hexo init命令提示需要空的文件夹 解决办法：创建一个空的文件夹，cd到该文件夹，再使用hexo init命令 使用hexo s命令时未找到hexo命令 解决办法：同装hexo依赖时一样的办法 将hexo路径添加到全局变量 要想打开博客网站不要关闭terminal里面的运行 一">
+<meta name="twitter:title" content="leetcode思路整理">
+<meta name="twitter:description" content="指针先把后指针地址传递给前指针，再把新前指针的地址之后的那个地址传给原来的后指针，如果中间有需要free的一定要记得free 例如： curren=cnext;cnext=current-&amp;gt;next;        current-&amp;gt;next=cnext-&amp;gt;next; free(cnext); cnext=current-&amp;gt;next; 想象一个链表，每个指针对应指向一个格">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -155,33 +155,29 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-第一篇博客" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-leetcode思路整理" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      使用hexo搭建博客
+      leetcode思路整理
     </h1>
   
 
         
-        <a href="/2018/10/17/第一篇博客/" class="archive-article-date">
-  	<time datetime="2018-10-17T02:59:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-17</time>
+        <a href="/2018/10/23/leetcode思路整理/" class="archive-article-date">
+  	<time datetime="2018-10-23T14:11:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-23</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>第一次使用hexo搭建自己的博客遇到的问题如下：</p>
-<ol>
-<li>note.js版本下载错了，下载时候需要选择自己系统对应的版本</li>
-<li>hexo init命令提示需要空的文件夹 解决办法：创建一个空的文件夹，cd到该文件夹，再使用hexo init命令</li>
-<li>使用hexo s命令时未找到hexo命令 解决办法：同装hexo依赖时一样的办法 将hexo路径添加到全局变量</li>
-<li>要想打开博客网站不要关闭terminal里面的运行</li>
-<li>一定要在tags和categories后面加空格</li>
+        <ol>
+<li>指针先把后指针地址传递给前指针，再把新前指针的地址之后的那个地址传给原来的后指针，如果中间有需要free的一定要记得free 例如： curren=cnext;cnext=current-&gt;next;        current-&gt;next=cnext-&gt;next; free(cnext); cnext=current-&gt;next; 想象一个链表，每个指针对应指向一个格子。</li>
+<li>function的嵌套可以巧妙使用，想要实现某种功能可以自己写函数，子函数要写在主函数的前面。</li>
 </ol>
 
       
@@ -217,11 +213,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">leetcode</a>
         		</li>
       		
 		</ul>
@@ -277,7 +269,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/10/17/第一篇博客/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/10/23/leetcode思路整理/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -291,15 +283,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/10/17/记录更新网页版博客的几个命令/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          记录更新网页版博客的几个命令
-        
-      </div>
-    </a>
   
+    <a href="/2018/10/22/记录一些进展和问题/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">记录一些进展和问题</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
