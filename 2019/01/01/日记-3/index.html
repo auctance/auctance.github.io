@@ -6,20 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>headfirst设计有感 | Hexo</title>
+  <title>日记 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="少用继承多用组合，继承会绑死在类上，组合更为灵活，复用性也更高。 面向接口的设计比面向实现的设计更好。 观察者模式就像报社subject和订阅人observer之间的关系一样，前者一旦有改变或者更新就会通知订阅人，另一方面，observer也可以取消订阅，不再作为一个观察者，两者之间内在的变化并不会影响两者之间的联系，此处也验证了低耦合的设计理念。 内部类可以单独使用需要的接口，并不用受到外部类">
-<meta name="keywords" content="headfirst">
+  <meta name="description" content="将字符串赋给数组应该使用strcpy或者strncpy  strcpy的原形: extern char strcpy(char dest, char src); 功能是从src地址开始将含有null结束符的字符串赋值到以dest开始的地址空间，返回dest。 要求两者的内存区域不可以重叠，并且dest必须有足够的内存空间来容纳src的字符串。             strncpy的原形: ex">
 <meta property="og:type" content="article">
-<meta property="og:title" content="headfirst设计有感">
-<meta property="og:url" content="http://yoursite.com/2018/10/31/headfirst设计有感/index.html">
+<meta property="og:title" content="日记">
+<meta property="og:url" content="http://yoursite.com/2019/01/01/日记-3/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="少用继承多用组合，继承会绑死在类上，组合更为灵活，复用性也更高。 面向接口的设计比面向实现的设计更好。 观察者模式就像报社subject和订阅人observer之间的关系一样，前者一旦有改变或者更新就会通知订阅人，另一方面，observer也可以取消订阅，不再作为一个观察者，两者之间内在的变化并不会影响两者之间的联系，此处也验证了低耦合的设计理念。 内部类可以单独使用需要的接口，并不用受到外部类">
+<meta property="og:description" content="将字符串赋给数组应该使用strcpy或者strncpy  strcpy的原形: extern char strcpy(char dest, char src); 功能是从src地址开始将含有null结束符的字符串赋值到以dest开始的地址空间，返回dest。 要求两者的内存区域不可以重叠，并且dest必须有足够的内存空间来容纳src的字符串。             strncpy的原形: ex">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-31T13:12:08.955Z">
+<meta property="og:updated_time" content="2019-01-01T15:04:22.494Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="headfirst设计有感">
-<meta name="twitter:description" content="少用继承多用组合，继承会绑死在类上，组合更为灵活，复用性也更高。 面向接口的设计比面向实现的设计更好。 观察者模式就像报社subject和订阅人observer之间的关系一样，前者一旦有改变或者更新就会通知订阅人，另一方面，observer也可以取消订阅，不再作为一个观察者，两者之间内在的变化并不会影响两者之间的联系，此处也验证了低耦合的设计理念。 内部类可以单独使用需要的接口，并不用受到外部类">
+<meta name="twitter:title" content="日记">
+<meta name="twitter:description" content="将字符串赋给数组应该使用strcpy或者strncpy  strcpy的原形: extern char strcpy(char dest, char src); 功能是从src地址开始将含有null结束符的字符串赋值到以dest开始的地址空间，返回dest。 要求两者的内存区域不可以重叠，并且dest必须有足够的内存空间来容纳src的字符串。             strncpy的原形: ex">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -155,20 +154,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-headfirst设计有感" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-日记-3" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      headfirst设计有感
+      日记
     </h1>
   
 
         
-        <a href="/2018/10/31/headfirst设计有感/" class="archive-article-date">
-  	<time datetime="2018-10-31T13:03:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-31</time>
+        <a href="/2019/01/01/日记-3/" class="archive-article-date">
+  	<time datetime="2019-01-01T13:42:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-01</time>
 </a>
         
       </header>
@@ -176,10 +175,14 @@
     <div class="article-entry" itemprop="articleBody">
       
         <ol>
-<li>少用继承多用组合，继承会绑死在类上，组合更为灵活，复用性也更高。</li>
-<li>面向接口的设计比面向实现的设计更好。</li>
-<li>观察者模式就像报社subject和订阅人observer之间的关系一样，前者一旦有改变或者更新就会通知订阅人，另一方面，observer也可以取消订阅，不再作为一个观察者，两者之间内在的变化并不会影响两者之间的联系，此处也验证了低耦合的设计理念。</li>
-<li>内部类可以单独使用需要的接口，并不用受到外部类的束缚，内部类也可以单独的继承，所以说内部类的好处就是它的独立性，轻便性。</li>
+<li>将字符串赋给数组应该使用strcpy或者strncpy  strcpy的原形: extern char<em> strcpy(char</em> dest, char<em> src); 功能是从src地址开始将含有null结束符的字符串赋值到以dest开始的地址空间，返回dest。 要求两者的内存区域不可以重叠，并且dest必须有足够的内存空间来容纳src的字符串。             strncpy的原形: extern char</em> strncpy(char<em> dest, char</em> src, size_tn)指定复制字符的个数， 将src中最多n个字符复制到字符数组dest中（它不是遇到null停止，而是先凑够n个字符才开始复制） 如果n&gt;dest的内存空间长度，dest栈空间将溢出产生崩溃异常。</li>
+<li>new和delete适合配合使用，比如在一个函数中使用new而在另一个函数中使用delete，实用性大大提高。</li>
+<li>数组的复制必须逐个复制，array的复制可以直接整体复制，vector的元素储存在自由储存区域或者堆中（注：自由储存区是抽象概念，使用new 和 delete 堆是操作系统维护的一块内存 使用malloc 和 free 两者是不同的概念），数组和array储存在栈中。</li>
+<li>返回空的迭代器比返回null要好，在使用的时候不需要使用if语句进行判断，空迭代器的hasnext永远是false；</li>
+<li>组合对象类比于一棵树图，可以顶层调用也可以直接调用某一层，采用顶层调用的时候不需要知道内部的具体实现。</li>
+<li>类的五项设计原则<br> 单一职责原则：一个类有且只有一个原因造成类的改变 低复杂，可读，易于维护，接口不混乱<br> 开放封闭原则：面向扩展开放，面向修改封闭，也就是可延展不可修改。<br> 里氏替换原则：子类可以替换任何基类出现的地方，并且经过替换之后，代码可以正常工作。<br> 依赖倒置原则：依赖于抽象而不是实现，即抽象编程。<br> 接口分离原则：明确每一个接口的职责，不建立臃肿的接口，细化分明。</li>
+<li>迭代器模式不暴露其内部实现。</li>
+<li>状态模式和策略模式的区别;<br> 对于策略模式，在很多个策略中选择与实际情况相适应的策略。<br> 对于状态模式，使用静态变量来表示状态量，并给其赋值，将动作量整合，给每一个动作量写一个类，在类中尽量完善判断条件，并给出最终结果，实现状态的变化。<br> 以上方法在遇到新添状态量时代码不易维护，进行如下重构：首先实现一个状态量的总接口，包含所有的动作变量，然后进行映射，产生所有的状态量，每个状态量都有所有的动作量，根据动作量的判断在各个状态量之间转换，当新的状态量来临时，只需要多添加一个映射即可。<br> 不同的情况择优使用。</li>
 </ol>
 
       
@@ -210,17 +213,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">headfirst</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -271,7 +263,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/10/31/headfirst设计有感/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/01/01/日记-3/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -285,18 +277,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/11/01/headfirst/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          headfirst一些想法
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/10/30/headfirst一些想法/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">headfirst一些想法</div>
+    <a href="/2018/12/28/C-语法/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">C++语法</div>
       <i class="icon-circle-right"></i>
     </a>
   
