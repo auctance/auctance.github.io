@@ -593,18 +593,6 @@
 <li>泛型编程，针对多种通用有效类型。泛型也就是不依赖具体数据的类型，例如通常的操作<br>int add(int a, int b){<br> return a+b;<br>}<br>而泛型操作例如：<br>template<class t=""><br>T add(T a, T b){<br> return a+b;<br>}<br>对于这个泛型函数，可以使用int float string等等进行初始化。string str = add<string>(“hello”,”world”);</string></class></li>
 <li>初步撸完钱能c++</li>
 <li>迭代器是一种设计模式，他可以遍历并选择序列中的对象，但是开发人员不需要了解该序列的底层结构，即不暴露内部表示。创建迭代器的代价较小，因此被称为“轻量级”对象。 例如vector的迭代器声明: vector<int>::iterator itra; 迭代器是与容器进行对应的，对于不同的容器，迭代器的表示稍有不同，但是都是用于遍历容器中的数据，这样的好处是可以脱离容器设计更加通用的算法。类比于模板的作用是将算法与具体数据分离，迭代器的作用是将算法与具体容器分离。迭代器对于集合类非常有用。</int></li>
-<li>枚举的一些用法：<br>可以定义常量 之前的常量定义都是 public static final 有了枚举之后，可以这样定义：<br>public enum Color{<br> RED, GREEN, BLANK, WHITE<br>}<br>使用枚举可以让代码的可读性更强:<br>enum Signal{<br> GREEN, YELLOW, RED<br>}<br>public class TrafficLight{<br> Signal color = Signal.RED;<br> public void change(){<pre><code>switch(color){
-case RED:
-    color = Signal.GREEN;
-    break; 
-case YELLOW:
-    color = Signal.RED;
-    break;  
-case GREEN:
-    color = Signal.YELLOW;
-    break;         
-}
-</code></pre> }<br>}<br>枚举的一些注意事项：<br>枚举对象之间比较相等是可以直接用==来的，不必须使用equals来比较。<br>enum类型不支持puclic和protected修饰符的构造方法，因此构造函数一定是private或者friendly类型的，所以枚举对象在程序中无法调用其构造方法来初始化。<br>定义枚举类型如果是简单类型那么最后一个枚举值后不需要添加符号，如果有定制方法，最后一个枚举值与之后的代码之间要用分号；隔开<br>在cluster（集群）环境下每个虚拟机都会创造出一个同意义的枚举对象，比较时如果用 == 看似一样的枚举值，实际比较不相等，因为不是同一个对象实例。</li>
 <li>一个类应该只有一个引起变化的原因，尽量让类保持单一责任制。假设一个类有两个职责，因需求改变其中一个职责，可能会导致另一个职责的改变，不符合低耦合的要求。但是有时将职责展开会很浪费时间，小范围程度内的职责改变是允许的，若范围过大，应该及时将代码重构。</li>
 </ol>
 
@@ -1105,18 +1093,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">namespace空间</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">pair类型</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">istringstream</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">cin</a>
               </li>
              
@@ -1130,6 +1106,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">stable_sort</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">namespace空间</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">pair类型</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">istringstream</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1165,11 +1153,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">应用</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">数组克隆</a>
+                <a href="javascript:void(0)" class="js-tag color3">模式</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1178,10 +1162,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">其他</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">数字电路</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1197,7 +1177,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">模式</a>
+                <a href="javascript:void(0)" class="js-tag color3">应用</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">数组克隆</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">数字电路</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">模板方法，vector，unordered_map</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1225,6 +1217,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Intellij</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">钩子</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">好莱坞原则</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">引用传递</a>
               </li>
              
@@ -1245,22 +1249,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">钩子</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">好莱坞原则</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">模板方法，vector，unordered_map</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">前端</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">linux</a>
               </li>
              
@@ -1269,15 +1257,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Intellij</a>
+                <a href="javascript:void(0)" class="js-tag color3">前端</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">tomcat</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">语法</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1286,6 +1270,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">网页</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">语法</a>
               </li>
             
             <div class="clearfix"></div>
