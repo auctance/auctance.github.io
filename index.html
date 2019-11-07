@@ -152,6 +152,93 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-vim命令笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/07/vim命令笔记/">vim命令笔记</a>
+    </h1>
+  
+
+        
+        <a href="/2019/11/07/vim命令笔记/" class="archive-article-date">
+  	<time datetime="2019-11-07T11:01:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>先按下数字 再按下G 在vim中将光标定位到指定行</li>
+<li>先按下gg到第一行 再按下G到最后一行 可以对整个文本产生对齐效果</li>
+<li>jkhl在vim中是下上左右的意思</li>
+<li>按下u是撤销 按下ctrl+r是重做</li>
+<li>按下数字n 再按下yy是复制n行 然后按下p是粘贴</li>
+<li>可以先按下G到末行 再按下o开始插入新的一行</li>
+<li>:sp [filename] 分屏操作 按下ctrl+ww在分屏之间切换 目前试验只能在同一路径下</li>
+<li>:vsp [filename] 分为左右两个屏 其余操作和sp相同</li>
+<li>将光标移动到一个函数上 按K可以查看用法 或者先按3 再按K</li>
+<li>gcc fPIC -c [filename.c] 会得到filename.o 这里只是做编译 这里可以将filename.c写成*.c即可同时编译该路径下所有.c文件 另外这里fPIC保证生成的.o文件与位置无关</li>
+<li>gcc [inputfile.c/inputfile.o] -o [outputfile] 这里生成的outputfile为可执行文件</li>
+<li>find ./* -name “[targetname]” 在当前目录下准确搜索名字为targetname的文件</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vim</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/11/07/vim命令笔记/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-pat记录" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -918,87 +1005,9 @@
 
 
   
-    <article id="post-日记-2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/27/日记-2/">日记</a>
-    </h1>
-  
-
-        
-        <a href="/2018/11/27/日记-2/" class="archive-article-date">
-  	<time datetime="2018-11-27T12:29:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ol>
-<li>模板方法：定义了一个算法的步骤，允许子类去解决具体的实现，算法定义了骨架，子类不改变结构可以重新定义一些步骤。</li>
-<li>vector在开辟的时候就有容量，可以使用capability查看，扩展并不意味着扩容。</li>
-<li>map有序占用内存小，内部实现是二叉树，unoerdered_map无序，占用内存大，一般来说比hashmap性能要好。</li>
-</ol>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">模板方法，vector，unordered_map</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/11/27/日记-2/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
     </nav>
   
 
@@ -1130,6 +1139,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">leetcode</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vim</a>
               </li>
              
               <li class="article-tag-list-item">
